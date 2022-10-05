@@ -38,4 +38,20 @@ header {
 .card > header {
     background: #288088;
     border: 2px solid #45ADAD;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* Steps 7 & 8 */
+.card {
+    flex-basis: 450px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
