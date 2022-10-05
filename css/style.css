@@ -1,0 +1,10 @@
+
+/* Step 1 */
+@keyframes header-grow {
+    from {width: 25px; opacity: 0;}
+    to {width: 475px; opacity: 1;}
+}
+
+header img {
+    animation: header-grow 5s 1;
+}
