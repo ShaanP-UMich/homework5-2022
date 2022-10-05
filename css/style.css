@@ -1,8 +1,14 @@
-
 /* Step 1 */
 @keyframes header-grow {
-    from {width: 25px; opacity: 0;}
-    to {width: 475px; opacity: 1;}
+    from {
+        width: 25px;
+        opacity: 0;
+    }
+
+    to {
+        width: 475px;
+        opacity: 1;
+    }
 }
 
 header img {
@@ -30,12 +36,13 @@ header {
 }
 
 /* Step 5 */
-.nav_links a:link, a:visited {
+.nav_links a:link,
+a:visited {
     color: #0000FF;
 }
 
 /* Step 6 */
-.card > header {
+.card>header {
     background: #288088;
     border: 2px solid #45ADAD;
     padding: 20px;
@@ -71,5 +78,36 @@ header {
 }
 
 @media screen and (min-width: 900px) {
-    
+
+    /* Step 11 */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav_links {
+        flex-direction: row;
+    }
+
+    /* Step 12 */
+    .pricing {
+        /* do I need something in here? */
+    }
+
+    .card {
+        flex-basis: 275px;
+    }
+
+    /* Step 13 */
+    body a + header {
+        position: sticky;
+        top: 0;
+    }
+}
+
+/* Step 14 */
+@media screen and (prefers-reduced-motion: reduce) {
+    header img {
+        animation: none;
+    }
 }
