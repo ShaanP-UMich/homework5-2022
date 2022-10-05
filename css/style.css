@@ -34,3 +34,8 @@ header {
     color: #0000FF;
 }
 
+/* Step 6 */
+.card > header {
+    background: #288088;
+    border: 2px solid #45ADAD;
+}
