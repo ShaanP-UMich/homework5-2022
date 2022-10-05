@@ -55,3 +55,21 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+/* Step 9 */
+.gallery img {
+    border: 10px solid #50C7C7;
+    margin: 10px;
+    width: 300px;
+}
+
+/* Step 10 */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+    
+}
