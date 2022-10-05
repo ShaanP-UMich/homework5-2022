@@ -10,9 +10,27 @@ header img {
 }
 
 /* Step 2 */
-
 body {
     font-family: 'Poppins', 'Serif';
     background-image: url("/images/concrete_seamless.png");
     background-color: #f1f1f1;
 }
+
+/* Step 3 */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Step 4 */
+.nav_links {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Step 5 */
+.nav_links a:link, a:visited {
+    color: #0000FF;
+}
+
