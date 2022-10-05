@@ -8,3 +8,11 @@
 header img {
     animation: header-grow 5s 1;
 }
+
+/* Step 2 */
+
+body {
+    font-family: 'Poppins', 'Serif';
+    background-image: url("/images/concrete_seamless.png");
+    background-color: #f1f1f1;
+}
