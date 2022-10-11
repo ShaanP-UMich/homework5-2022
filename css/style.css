@@ -50,8 +50,10 @@ a:visited {
     border-top-right-radius: 50px;
 }
 
-/* Steps 7 & 8 */
+/* Steps 7 & 8 (and part of 6) */
 .card {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     flex-basis: 450px;
 }
 
