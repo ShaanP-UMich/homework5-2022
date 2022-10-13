@@ -11,6 +11,7 @@
     }
 }
 
+/* Animation for Logo */
 #logo {
     animation: header-grow 5s 1;
 }
@@ -22,7 +23,7 @@ body {
     background-color: #f1f1f1;
 }
 
-/* Step 3 */
+/* Step 3 - Stacks items in navbar */
 header {
     display: flex;
     flex-direction: column;
@@ -35,13 +36,13 @@ header {
     flex-direction: column;
 }
 
-/* Step 5 */
+/* Step 5 - Make visited and unvisited links same color */
 .nav_links a:link,
 a:visited {
     color: #0000FF;
 }
 
-/* Step 6 */
+/* Step 6 - Styling for the cards */
 .card>header {
     background: #288088;
     border: 2px solid #45ADAD;
@@ -51,12 +52,14 @@ a:visited {
 }
 
 /* Steps 7 & 8 (and part of 6) */
+/* Gets rid of white corners */
 .card {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     flex-basis: 450px;
 }
 
+/* Styles all the cards */
 .pricing {
     display: flex;
     flex-direction: row;
@@ -65,23 +68,24 @@ a:visited {
     align-items: center;
 }
 
-/* Step 9 */
+/* Step 9 - Style the gallery images */
 .gallery img {
     border: 10px solid #50C7C7;
     margin: 10px;
     width: 300px;
 }
 
-/* Step 10 */
+/* Step 10 - Make gallery images wrap */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* For bigger screens */
 @media screen and (min-width: 900px) {
 
-    /* Step 11 */
+    /* Step 11 - Make nav bar horizontal */
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -91,25 +95,26 @@ a:visited {
         flex-direction: row;
     }
 
-    /* Step 12 */
+    /* Step 12 - Change styling for cards and pricing */
     .card {
         flex-basis: 275px;
     }
 
-    /* Step 13 */
+    /* Step 13 - Make header stay at the top even when scrolled */
     body a+header {
         position: sticky;
         top: 0;
     }
 }
 
-/* Step 14 */
+/* Step 14 - Remove animations if user wants reduced motion */
 @media screen and (prefers-reduced-motion: reduce) {
     header img {
         animation: none;
     }
 }
 
+/* Styling for the print view */
 @media print {
     body {
         font-family: Arial, Helvetica;
@@ -120,16 +125,19 @@ a:visited {
         width: 100%;
     }
 
+    /* Space out nav links */
     .nav_links {
         flex-direction: row;
         justify-content: space-around;
     }
 
+    /* Get cards on the same row */
     .pricing {
         flex-wrap: nowrap;
         align-items: flex-end;
     }
 
+    /* Specific card styling for print view */
     .card {
         border: 2px solid #45ADDD;
         border-top-left-radius: 50px;
@@ -141,6 +149,7 @@ a:visited {
         display: none;
     }
 
+    /* Add thumbs up after the first review */
     .card li:nth-child(2)::after {
         content: "\01F44D";
     }
